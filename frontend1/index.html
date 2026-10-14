@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Meeting Notes</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-white min-h-screen">
+
+    <div class="max-w-6xl mx-auto px-6 py-10">
+
+        <!-- Header -->
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-bold">
+                🤖 AI Meeting Notes
+            </h1>
+
+            <p class="text-slate-400 mt-3">
+                Convert your meeting transcript into organized notes
+            </p>
+        </div>
+
+
+        <!-- Main area -->
+        <div class="grid md:grid-cols-2 gap-6">
+
+            <!-- Transcript -->
+            <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800">
+
+                <h2 class="text-xl font-semibold mb-4">
+                    📄 Transcript
+                </h2>
+
+                <textarea
+                    id="transcript"
+                    class="w-full h-96 bg-slate-800 border border-slate-700 rounded-xl p-4
+                           text-white placeholder-slate-500 outline-none
+                           focus:ring-2 focus:ring-blue-500 resize-none"
+                    placeholder="Paste your meeting transcript here..."
+                ></textarea>
+
+                <button
+                    id="generateBtn"
+                    class="w-full mt-4 bg-blue-600 hover:bg-blue-700
+                           py-3 rounded-xl font-semibold transition"
+                >
+                    ✨ Generate Notes
+                </button>
+
+            </div>
+
+
+            <!-- Notes -->
+            <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800">
+
+                <h2 class="text-xl font-semibold mb-4">
+                    📝 Meeting Notes
+                </h2>
+
+                <div
+                    id="notes"
+                    class="h-96 overflow-y-auto bg-slate-800 rounded-xl p-4
+                           text-slate-300 whitespace-pre-wrap"
+                >
+                    Your generated notes will appear here...
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script1.js"></script>
+
+</body>
+</html>
